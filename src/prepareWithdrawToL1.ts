@@ -1,4 +1,3 @@
-// User registration workflow example
 import { AlchemyProvider } from '@ethersproject/providers';
 import { Wallet } from '@ethersproject/wallet';
 import { getConfig, Workflows, TokenType, ERC721Withdrawal, generateStarkWallet } from '@imtbl/core-sdk';
@@ -26,6 +25,9 @@ const workflows = new Workflows(config);
       tokenAddress: requireEnvironmentVariable("TOKEN_ADDRESS"),
     }
   };
+
+  // Prepers token to withdrawal. Changes status from `Owned` to `Preparing Withdrawal`. To complete withdrawat wait for status to change `Withdrawable`
+  // and then call withdrawToL1 script.
   const response = await workflows.prepareWithdrawal(signer, startWallet, tokenWithdrawal, "1");
   console.log(response);
 

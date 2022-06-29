@@ -1,4 +1,3 @@
-// User registration workflow example
 import { AlchemyProvider } from '@ethersproject/providers';
 import { Wallet } from '@ethersproject/wallet';
 import { getConfig, Workflows, TokenType, ERC721Withdrawal, generateStarkWallet } from '@imtbl/core-sdk';
@@ -27,6 +26,7 @@ const workflows = new Workflows(config);
     }
   };
 
+  // To withdraw token to L1, token needs to have status `Withdrawable`!!! Need to wait several hours after calling prepareWitgDrawToL1
   const response = await workflows.completeERC721Withdrawal(signer, startWallet.starkPublicKey, tokenWithdrawal);
   console.log(response);
 

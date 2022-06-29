@@ -22,6 +22,7 @@
     "bulk-mint": "ts-node -r tsconfig-paths/register -r dotenv/config ./src/bulk-mint.ts",
     "yalc:link": "yalc link @imtbl/imx-sdk",
     "withdrawToL1": "ts-node -r tsconfig-paths/register -r dotenv/config ./src/withdrawToL1.ts",
+    "prepareWithdrawToL1": "ts-node -r tsconfig-paths/register -r dotenv/config ./src/prepareWithdrawToL1.ts.ts",
     "onboarding:user-registration": "ts-node -r tsconfig-paths/register -r dotenv/config ./src/onboarding/1-user-registration.ts",
     "onboarding:create-project": "ts-node -r tsconfig-paths/register -r dotenv/config ./src/onboarding/2-create-project.ts",
     "onboarding:create-collection": "ts-node -r tsconfig-paths/register -r dotenv/config ./src/onboarding/3-create-collection.ts",
