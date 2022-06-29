@@ -29,9 +29,9 @@ const component = '[IMX-CREATE-PROJECT]';
    * Edit your values here
    */
   const params: CreateProjectParams = {
-    name: 'ENTER_PROJECT_NAME_HERE-2',
-    company_name: 'ENTER_COMPANY_NAME_HERE',
-    contact_email: 'contactemail@example.com',
+    name: 'SkyGate NFT V9',
+    company_name: 'SkyNFTV9',
+    contact_email: 'kornel.swiatlowski.skygate@gmail.com',
   };
 
   let project;

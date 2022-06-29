@@ -35,13 +35,13 @@ const component = '[IMX-CREATE-COLLECTION]';
    * Edit your values here
    */
   const params: CreateCollectionParams = {
-    name: 'ENTER_COLLECTION_NAME',
-    // description: 'ENTER_COLLECTION_DESCRIPTION (OPTIONAL)',
+    name: 'SkyGate NFT V9',
+    description: 'LOREM IPSUM',
     contract_address: collectionContractAddress,
     owner_public_key: ownerPublicKey,
-    // icon_url: '',
-    // metadata_api_url: '',
-    // collection_image_url: '',
+    icon_url: 'https://gateway.pinata.cloud/ipfs/QmWUkvg17Bi2qiH6k6nhXWivLLFLpyEQetFXCQadgJAyRz/0',
+    metadata_api_url: 'https://gateway.pinata.cloud/ipfs/QmWUkvg17Bi2qiH6k6nhXWivLLFLpyEQetFXCQadgJAyRz',
+    collection_image_url: 'https://skygate.io/wp-content/uploads/2020/04/skygate-logo-animation.gif',
     project_id: parseInt(projectId, 10),
   };
 
